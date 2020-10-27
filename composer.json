@@ -1,0 +1,17 @@
+{
+    "name": "yantp/widget",
+    "description": "daily widget",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "peter yan",
+            "email": "1262233230@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Yantp\\Widget\\": "src/"
+        }
+    }
+}
