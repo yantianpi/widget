@@ -2,9 +2,9 @@
 
 /**
  * Copyright (c) 2020
- * Õª    Òª£ºÎÄ¼şËø
- * ×÷    Õß£ºpeteryan
- * ĞŞ¸ÄÈÕÆÚ£º2020.10.27
+ * æ‘˜    è¦ï¼šæ–‡ä»¶é”
+ * ä½œ    è€…ï¼špeteryan
+ * ä¿®æ”¹æ—¥æœŸï¼š2020.10.27
  */
 
 namespace Yantp\Widget;
@@ -16,27 +16,27 @@ namespace Yantp\Widget;
 class FileLock
 {
     /**
-     * @var null $fileHandle ÎÄ¼ş¾ä±ú
+     * @var null $fileHandle æ–‡ä»¶å¥æŸ„
      * @access private
      */
     private $fileHandle = null;
 
     /**
-     * @var string $lockFilePath ËøÎÄ¼ş
+     * @var string $lockFilePath é”æ–‡ä»¶
      * @access private
      */
     private $lockFilePath = '';
 
     /**
-     * @var string $suffix ÎÄ¼şºó×º
+     * @var string $suffix æ–‡ä»¶åç¼€
      * @access private
      */
     private $suffix = '';
 
     /**
      * FileLock constructor.
-     * @param string $lockFilePath ËøÎÄ¼ş
-     * @param string $suffix ÎÄ¼şºó×º
+     * @param string $lockFilePath é”æ–‡ä»¶
+     * @param string $suffix æ–‡ä»¶åç¼€
      */
     public function __construct($lockFilePath, $suffix = '.lock')
     {
@@ -45,9 +45,9 @@ class FileLock
     }
 
     /**
-     * ¹¦   ÄÜ£º¼ÓËø
-     * ĞŞ¸ÄÈÕÆÚ£º2020-10-27
-     * @return bool ¼ÓËø³É¹¦·µ»Øtrue,·ñÔò·µ»Øfalse
+     * åŠŸ   èƒ½ï¼šåŠ é”
+     * ä¿®æ”¹æ—¥æœŸï¼š2020-10-27
+     * @return bool åŠ é”æˆåŠŸè¿”å›true,å¦åˆ™è¿”å›false
      * @access public
      */
     public function lock()
@@ -60,9 +60,9 @@ class FileLock
     }
 
     /**
-     * ¹¦   ÄÜ£º½âËø
-     * ĞŞ¸ÄÈÕÆÚ£º2020-10-27
-     * @return bool ½âËø³É¹¦·µ»Øtrue,·ñÔò·µ»Øfalse
+     * åŠŸ   èƒ½ï¼šè§£é”
+     * ä¿®æ”¹æ—¥æœŸï¼š2020-10-27
+     * @return bool è§£é”æˆåŠŸè¿”å›true,å¦åˆ™è¿”å›false
      * @access public
      */
     public function unlock()
@@ -75,8 +75,8 @@ class FileLock
     }
 
     /**
-     * ¹¦   ÄÜ£º´ò¿ªËøÎÄ¼ş
-     * ĞŞ¸ÄÈÕÆÚ£º2020-10-27
+     * åŠŸ   èƒ½ï¼šæ‰“å¼€é”æ–‡ä»¶
+     * ä¿®æ”¹æ—¥æœŸï¼š2020-10-27
      * @return void
      * @access private
      */
@@ -94,7 +94,7 @@ class FileLock
     }
 
     /**
-     * Îö¹¹
+     * ææ„
      */
     public function __destruct()
     {
